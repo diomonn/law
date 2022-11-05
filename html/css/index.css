@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url(../files/SourceHanSansSC-Regular-2.ttf);
+}
+
+@font-face {
+    font-family: 'HappyZcool-2016';
+    src: url(../files/ZhanKuKuHei-1.ttf);
+}
+
+:root {
+    --d6d: #896d6d;
+    --f4f4: #fff4f4;
+}
+
+html {
+    min-width: 375px;
+    font-family: 'SourceHanSansSC';
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.header {
+    z-index: 100;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background: var(--d6d);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header img {
+    border-radius: 50%;
+}
+
+.header .id {
+    color: var(--f4f4);
+    margin-top: 1.625rem;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .bths {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header .id img {
+    width: 50%;
+}
+
+.bt1 {
+    font-family: 'SourceHanSansSC';
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    background: #fff4f4;
+    border: 0;
+}
+
+.header img:hover,
+.bt1:hover {
+    color: #fff;
+    background: #000;
+    transform: translateY(-1px)
+}
+
+.main {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 4%;
+    bottom: 0;
+    position: fixed;
+    color: var(--d6d);
+}
+
+@media all and (min-width:375px) and (max-width:800px) {
+    body {
+        flex-direction: column;
+    }
+    .header {
+        width: 100%;
+        height: 10%;
+        box-shadow: 1px 1px 10px black;
+        flex-direction: row;
+    }
+    .bt1 {
+        width: 1.875rem;
+        height: 100%;
+    }
+    .main {
+        width: 100%;
+        height: 90%;
+    }
+    .header .id {
+        margin: 0;
+        height: 100%;
+        width: 10%;
+        align-items: center;
+    }
+    .header .id p {
+        display: none;
+    }
+    .header .id img {
+        margin-top: .8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .header .bths {
+        position: relative;
+        height: 100%;
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bt1 {
+        overflow: hidden;
+        position: relative;
+        width: 2.5rem;
+        font-size: .75rem;
+        height: 50%;
+    }
+    .bt1 :hover {
+        text-overflow: inherit;
+        overflow: visible;
+    }
+}

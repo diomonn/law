@@ -1,0 +1,34 @@
+@import url(./index.css);
+.main {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    transition: all .5 linear;
+    z-index: -1;
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: rgb(189, 186, 186, 0.3);
+    border-radius: 50% 40%;
+}
+
+.text {
+    overflow-y: auto !important;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+    width: 65%;
+    height: 72%;
+    font-family: 'HappyZcool-2016';
+}
+
+@media screen and (min-width:375px) and (max-width:1243px) {
+    .text {
+        line-height: 2rem;
+        width: 73%;
+    }
+}

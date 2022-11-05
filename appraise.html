@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html/css/appraise.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="id" onclick=" window.location.href='index.html'">
+            <img src="./html/images/l1.jpg" alt="">
+            <p>A
+                <br /> lawyer</p>
+        </div>
+        <div class="bths">
+            <button class="bt1" onclick=" window.location.href='experience.html'">experience</button>
+            <button class="bt1" onclick=" window.location.href='crimial.html'">criminal law</button>
+            <button class="bt1" onclick=" window.location.href='Contactme.html'">Contact me</button>
+            <button class="bt1" onclick=" window.location.href='appraise.html'">appraise</button>
+            <button class="bt1" onclick=" window.location.href='specialized.html'">specialized</button>
+            <button class="bt1" onclick=" window.location.href='tourism.html'">tourism</button>
+            <button class="bt1" onclick=" window.location.href='essay.html'">essay</button>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="essaybox">
+            <div class="box">
+                <div class="box1"><img class="f" src="./html/images/l1.jpg" alt="">
+                    <p class="t"></p>
+                </div>
+                <p class="box2">- @o21po3kp12o</p>
+            </div>
+            <div class="box">
+                <div class="box1"><img class="f" src="./html/images/l1.jpg" alt="">
+                    <p class="t"> GOOD job!</p>
+                </div>
+                <p class="box2">- @o21po3kp12o</p>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img class="f" src="./html/images/l1.jpg" alt="">
+                    <p class="t">
+                        A very good lawyer</p>
+                </div>
+                <p class="box2">- @o21po3kp12o</p>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img class="f" src="./html/images/le.jpg" alt="">
+                    <p class="t">This is my lawyer</p>
+                </div>
+                <p class="box2">- @o21po3kp12o</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        @author Q
+    </div>
+
+</body>
+<script>
+    const box1 = document.querySelectorAll('.box1');
+    console.log('1');
+    for (let i = 0; i < box1.length; i++) {
+        if (box1[i].children[1].innerHTML) {
+            box1[i].children[0].style.display = 'none';
+        }
+
+    }
+</script>
+
+</html>

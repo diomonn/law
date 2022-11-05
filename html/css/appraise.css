@@ -1,0 +1,48 @@
+    @import url(./index.css);
+.main {
+    display: flex;
+    justify-content: center;
+    background: rgb(187, 187, 187);
+    align-items: center;
+}
+
+.main .essaybox {
+    box-shadow: inset 0px 0px 7px 0px rgba(3, 3, 3, .5);
+    margin-top: -0.625rem;
+    position: relative;
+    width: 85%;
+    height: 90%;
+    background: rgb(247, 247, 247);
+    overflow: auto;
+}
+
+.essaybox .box {
+    margin-top: 1.25rem;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box .box1 {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--d6d);
+    font-weight: bold;
+    /* width: 100%; */
+    width: 14%;
+}
+
+.box .box1 .f {
+    position: relative;
+    width: 100%;
+}
+
+.box .box2 {
+    font-size: 1rem;
+}
+
+@media all and (min-width:375px) and (max-width:800px) {

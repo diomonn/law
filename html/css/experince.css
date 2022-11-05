@@ -1,0 +1,95 @@
+    @import url(./index.css);
+    .main {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .main div {
+        text-align: center;
+    }
+    
+    .h {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .h div {
+        background: url(../images/OIP-C.jpg);
+        width: 25rem;
+        height: 18.75rem;
+        background-size: 100% 100%;
+    }
+    
+    .h1 {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .h1 div:nth-child(1) {
+        background: url(../images/f.png);
+        position: relative;
+        padding-top: 6.25rem;
+        width: 19rem;
+        height: 90%;
+        background-size: cover;
+    }
+    
+    .h1 div:nth-child(2) {
+        background: url(../images/f1.jpg);
+        position: relative;
+        width: 12.5rem;
+        height: 18.75rem;
+        border-radius: 60%;
+        background-size: cover;
+    }
+    
+    .h2 {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .h2 div {
+        background: url(../images/R-C1.jpg);
+        display: flex;
+        width: 35rem;
+        height: 18.75rem;
+        background-size: 100% 100%;
+    }
+    
+    .h3 div {
+        background-image: url(../images/R-C.jpg);
+        background-size: 100% 100%;
+        margin-top: 6.25rem;
+        width: 33.125rem;
+        height: 14.75rem;
+    }
+    
+    .main p {
+        transition: all 1s linear;
+        display: none;
+        text-shadow: 1px 1px 10px #000;
+        color: rgb(140, 193, 240);
+        font-size: 2rem;
+        font-family: 'HappyZcool-2016';
+    }
+    
+    .h1:hover p,
+    .h2:hover p,
+    .h3:hover p,
+    .h:hover p {
+        display: block;
+    }
+    
+    @media all and (min-width:375px) and (max-width:800px) {
+        .main {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .h1,
+        .h2,
+        .h3 {
+            margin-top: 6.25rem;
+        }
+    }

@@ -1,0 +1,53 @@
+@import url(./index.css);
+.main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url(../images/two.jpg);
+    background-size: cover;
+}
+
+.mainbox {
+    position: relative;
+    width: 80%;
+    height: 55%;
+    background: rgb(0, 0, 255, .3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgbox {
+    position: relative;
+    top: -6.25rem;
+    width: 27%;
+    height: 80%;
+    background: url(../images/Z.jpg);
+    background-size: cover;
+}
+
+.textbox {
+    position: relative;
+    top: -1.5rem;
+    background: rgb(255, 255, 255);
+    width: 60%;
+    height: 60%;
+    display: flex;
+    line-height: 2.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    border: 2px black inherit;
+    width: 150px;
+    height: 50px;
+    background: aliceblue;
+    color: blue;
+}
+
+button:hover {
+    background: blue;
+    color: aliceblue;
+}
